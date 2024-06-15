@@ -1079,4 +1079,78 @@ header {
   top: -13vw;
   z-index: -1;
   left: -15vw;
+  width: 48vw;
+  height: 48vw;
+}
+
+/* INASTAGRAM section --------------------------------------------------------------------- */
+
+.inastagram-section {
+  padding: 5.2vw 0;
+}
+
+.instagram-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6vw;
+  line-height: 1.9vw;
+  text-transform: uppercase;
+  color: #132b29;
+  opacity: 0.8;
+  width: 18vw;
+  margin: 0 auto;
+  margin-bottom: 3.7vw;
+}
+
+.instagram-title-span {
+  font-style: italic;
+}
+
+.instagram-upper-image-container {
+  display: flex;
+  gap: 0.4vw;
+  margin-bottom: 0.4vw;
+}
+
+.upper-large-images {
+  width: 32.08vw;
+  height: 31.25vw;
+}
+
+.upper-small-images {
+  width: 15.4vw;
+  height: 15.4vw;
+}
+
+.upper-small-images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4vw;
+}
+
+.instagram-bootom-image-container {
+  display: flex;
+  gap: 0.4vw;
+}
+
+.bottom-small-images {
+  width: 19.7vw;
+  height: 19.7vw;
+}
+
+.botoom-large-image {
+  width: 40.1vw;
+  height: 40vw;
+}
+
+.bottom-small-iamges-container {
+  display: flex;
+  gap: 0.4vw;
+}
+
+.bottom-small-images-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4vw;
 }
