@@ -101,6 +101,14 @@ header {
   padding-top: 1vw;
 }
 
+.header-line {
+  position: absolute;
+  width: 99vw;
+  height: 2px;
+  background-color: #e6e6e0;
+  left: 0;
+}
+
 .top-header {
   display: flex;
   justify-content: space-between;
@@ -178,8 +186,7 @@ header {
 .header-nav-list {
   display: flex;
   justify-content: center;
-  border-top: 2px solid #e6e6e0;
-  border-bottom: 2px solid #e6e6e0;
+
   gap: 5.2vw;
 }
 
@@ -188,6 +195,8 @@ header {
 }
 
 .list-item-link {
+  position: relative;
+
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 0.8vw;
@@ -195,7 +204,48 @@ header {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #302215;
-  padding: 1.4vw 0 1.2vw 0;
+  padding: 1.4vw 0 1vw 0;
+  transition: 0.4s;
+}
+
+.list-item-link:hover {
+  color: #0c4d47;
+}
+
+.list-item-link:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  -o-transition: transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.list-item-link::before {
+  z-index: 9;
+  content: "";
+  width: 70%;
+  height: 4px;
+  background-color: #0c4d47;
+  position: absolute;
+  left: 15%;
+  bottom: -5px;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  -o-transition: transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
 .header-search-form {
