@@ -81,6 +81,14 @@ body {
   transition: 0.5s;
 }
 
+.plus-icon {
+  fill: #132b29;
+}
+
+.default-btn:hover .plus-icon {
+  fill: #ffffff;
+}
+
 .default-btn:hover {
   background-color: #132b29;
   border-radius: 0%;
@@ -1657,4 +1665,127 @@ footer {
 .footer-payment-icon {
   opacity: 0.4;
   width: 3.3vw;
+}
+
+/* PRODUCT page ------------------------------------------------------------- */
+
+.product-images {
+  display: flex;
+  gap: 0.83vw;
+}
+
+.product-small-images-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-small-images {
+  width: 6.2vw;
+  height: 6.2vw;
+}
+
+.product-large-image {
+  width: 38.3vw;
+  height: 41.6vw;
+}
+
+/* CATALOG page -------------------------------------------------------- */
+
+.catalog-hero {
+  background-image: url(../images/catalog-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 99vw 19.7vw;
+  width: 99vw;
+  margin: 0 auto;
+}
+
+.catalog-section {
+  padding-bottom: 7.2vw;
+}
+
+.catalog-title {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3.3vw;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.catalog-list {
+  flex-wrap: wrap;
+  row-gap: 1.8vw;
+}
+
+.filter-container {
+  margin-bottom: 3.1vw;
+}
+
+.filter-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.9vw;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #132b29;
+  border: 3px solid #132b29;
+  border-radius: 11.3vw;
+  padding: 1.1vw 3.2vw;
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  border-radius: 0;
+  background-color: #132b29;
+  color: #ffffff;
+}
+
+/* CONTACT page -------------------------------------------------------- */
+
+.contact-bg-block {
+  position: relative;
+  background-image: url(../images/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 39.9vw;
+  height: 39.9vw;
+}
+
+.contact-title {
+}
+
+.contact-bg-rectangle {
+  position: absolute;
+  top: 0.4vw;
+  left: 0.4vw;
+  width: 38.9vw;
+  height: 38.9vw;
+}
+
+.ekaterina-font {
+}
+
+.contact-info-container {
+}
+
+.contact-email-icon {
+}
+
+.contact-address-container {
+}
+
+.contact-address-icon {
+}
+
+.contact-address {
+}
+
+.contact-address-value {
+}
+
+.contact-social-links-container {
+}
+
+.contact-social-link {
 }
