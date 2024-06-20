@@ -1742,6 +1742,13 @@ footer {
 }
 
 /* CONTACT page -------------------------------------------------------- */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 6.7vw;
+  margin-bottom: 10.4vw;
+  gap: 0.4vw;
+}
 
 .contact-bg-block {
   position: relative;
@@ -1750,9 +1757,17 @@ footer {
   background-size: contain;
   width: 39.9vw;
   height: 39.9vw;
+  padding-top: 7vw;
+  padding-left: 3vw;
 }
 
 .contact-title {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3.3vw;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .contact-bg-rectangle {
@@ -1763,29 +1778,198 @@ footer {
   height: 38.9vw;
 }
 
-.ekaterina-font {
+.contact-info-container {
+  width: 40vw;
+  height: 40vw;
+
+  background: rgba(230, 230, 224, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact-info-container {
+.info-container {
+  width: 26.6vw;
+}
+
+.contact-email {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.6vw;
+  color: #0c4d47;
+  display: flex;
+  align-items: center;
+  gap: 1.7vw;
+  margin-bottom: 3vw;
 }
 
 .contact-email-icon {
+  width: 2.2vw;
+  height: 2.2vw;
 }
 
 .contact-address-container {
+  display: flex;
+  gap: 1vw;
 }
 
 .contact-address-icon {
+  width: 3.3vw;
+  height: 3.3vw;
+  fill: rgba(230, 230, 224, 0.3);
 }
 
 .contact-address {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.3vw;
+  color: #302215;
+  opacity: 0.8;
+  margin-bottom: 0.6vw;
 }
 
 .contact-address-value {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 1.4vw;
+  letter-spacing: -0.02em;
+  color: #302215;
+  width: 17vw;
+}
+
+.contact-info-line {
+  width: 100%;
+  height: 2px;
+  background-color: #e6e6e0;
+  margin-top: 3.1vw;
+  margin-bottom: 3.1vw;
 }
 
 .contact-social-links-container {
+  display: flex;
+  gap: 1.2vw;
 }
 
 .contact-social-link {
+  width: 7.2vw;
+  height: 7.2vw;
+  background-color: #132b29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.contact-socil-link-icon {
+  width: 2.3vw;
+  height: 2.3vw;
+  fill: #e1ff42;
+  transition: 0.3s;
+}
+
+.contact-social-link:hover {
+  background-color: #e1ff42;
+}
+
+.contact-social-link:hover .contact-socil-link-icon {
+  fill: #132b29;
+}
+
+/* BESTSELLERS page ----------------------------------------------------------------- */
+
+.bestsellers-hero-section {
+  display: flex;
+  gap: 0.4vw;
+  margin-top: 0.5vw;
+}
+
+.bestsellers-hero-title-block {
+  background-image: url(../images/bestsellers/Frame\ 37271.jpg);
+  background-repeat: no-repeat;
+  background-size: 19.7vw 27.6vw;
+  background-position-x: right;
+  height: 27.6vw;
+  width: 49.4vw;
+}
+
+.bestsellers-hero-title {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3.3vw;
+  text-transform: uppercase;
+  color: #302215;
+  display: flex;
+  align-items: baseline;
+}
+
+.best-ekaterina {
+  height: 17vw;
+}
+
+.bestsellesrs-title-number {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  color: #302215;
+}
+
+.bestseller-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 0.7vw;
+  line-height: 1vw;
+  color: #302215;
+  opacity: 0.6;
+  width: 11vw;
+  margin-left: 9.7vw;
+}
+
+.bestsellers-hero-image-block {
+  background-image: url(../images/bestsellers/Frame\ 37270.jpg);
+  background-size: 49.3vw 27.6vw;
+  width: 49.3vw;
+  height: 27.6vw;
+}
+
+.bestseller-catalog-container {
+  display: flex;
+}
+
+.bestseller-btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bestseller-title-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.6vw;
+  line-height: 1.9vw;
+  text-transform: uppercase;
+  color: #132b29;
+  opacity: 0.8;
+  display: flex;
+  align-items: baseline;
+}
+
+.bestseller-title-text-number {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  letter-spacing: 0.08em;
+  color: #132b29;
+  opacity: 0.4;
+}
+
+.catalog-in-bestsellers {
+  padding-top: 4.6vw;
+  padding-bottom: 8.3vw;
+}
+
+.bestseller-swiper-catalog-section {
+  padding-bottom: 7.2vw;
 }
