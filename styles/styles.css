@@ -149,7 +149,7 @@ header {
 }
 
 .header-number-value {
-  font-family: "Raleway";
+  font-family: "Inter";
   font-weight: 600;
   font-size: 0.8vw;
   line-height: 1vw;
@@ -299,6 +299,27 @@ header {
 .search-container:hover .header-search-form {
   transform: translateX(0);
 }
+
+.btn-search-icon {
+  width: 1vw;
+  height: 1vw;
+}
+
+.btn-like-icon {
+  width: 1vw;
+  height: 1vw;
+}
+
+.btn-profile-icon {
+  width: 1vw;
+  height: 1vw;
+}
+
+.btn-bag-icon {
+  width: 1vw;
+  height: 1vw;
+}
+
 /* HERO--------------------------------------------------------------------------- */
 .hero-section {
   padding-bottom: 1vw;
