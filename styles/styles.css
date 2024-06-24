@@ -2213,3 +2213,102 @@ footer {
   font-style: italic;
   color: #e1ff42;
 }
+
+/* FAQ page ------------------------------------------------ */
+
+.faq-section {
+  padding: 5.5vw 0 10.4vw 0;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+
+.faq-hero-section {
+  width: 99vw;
+  margin: 0 auto;
+  background-image: url(../images/faq-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 9.3vw;
+  padding-bottom: 1.4vw;
+}
+
+.faq-hero-title {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 4.7vw;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.faq-container {
+  width: 63vw;
+  margin: 0 auto;
+  padding: 3.1vw;
+  background-color: #e6e6e0;
+}
+
+.backdrop-container {
+}
+
+.heading-text {
+  margin-bottom: 1.5vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.2vw;
+  color: #302215;
+}
+
+.backdrop-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 1.4vw;
+  line-height: 1.4;
+  color: #000;
+  opacity: 0;
+  height: 0;
+  transition: 0.3s;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.is-active {
+  opacity: 1;
+  height: auto;
+  transition: 0.3s;
+  margin-bottom: 0;
+  margin-bottom: 1.5vw;
+}
+
+.backdrop-line {
+  width: 1vw;
+  height: 3px;
+  transition: 0.5s;
+  background: #5d5e5e;
+}
+
+.backdrop-container:hover .backdrop-line {
+  width: 57.5vw;
+  background: #e1ff42;
+}
+
+.backdrop-arrow-icon {
+  width: 0.7vw;
+  height: 0.4vw;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.backdrop-heading-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.is-rotate {
+  transform: rotate(180deg);
+}
