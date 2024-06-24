@@ -159,7 +159,9 @@
                 <a class="list-item-link" href="./about.html">Про нас</a>
               </li>
               <li class="header-list-item">
-                <a class="list-item-link" href="">Оплата и доставка</a>
+                <a class="list-item-link" href="./payment.html"
+                  >Оплата и доставка</a
+                >
               </li>
               <li class="header-list-item">
                 <a class="list-item-link" href="./contact.html">Контакти</a>
@@ -175,8 +177,8 @@
     </header>
 
     <main>
-      <section>
-        <div class="container">
+      <section class="section-main-product-info">
+        <div class="container product-container">
           <div class="product-images">
             <div class="product-small-images-list">
               <div class="product-small-images">
@@ -208,9 +210,10 @@
 
           <div class="product-info-container">
             <div class="product-type-rating-container">
-              <p class="product-type-name"></p>
+              <p class="product-type-name">Крем для тела</p>
               <div class="product-rating">
                 <svg
+                  class="rating-icon"
                   width="121"
                   height="24"
                   viewBox="0 0 121 24"
@@ -243,20 +246,22 @@
                     fill="#0C4D47"
                   />
                 </svg>
-                <p>(23)</p>
+                <p class="bestseller-title-number">(23)</p>
               </div>
             </div>
 
             <div>
-              <h2>ОЧИЩУВАЛЬНИЙ МУС ДЛЯ СУХОЇ ТА ЧУТЛИВОЇ ШКІРИ ОБЛИЧЧЯ</h2>
-              <p>Обсяг: 50 МЛ</p>
+              <h2 class="product-name">
+                ОЧИЩУВАЛЬНИЙ МУС ДЛЯ СУХОЇ ТА ЧУТЛИВОЇ ШКІРИ ОБЛИЧЧЯ
+              </h2>
+              <p class="product-volume">Обсяг: 50 МЛ</p>
               <div class="product-price-container">
                 <p class="cuurent-product-price">265 UAH</p>
                 <p class="old-product-price">365 UAH</p>
               </div>
               <p class="product-discount">Со скидкой 20%</p>
 
-              <div>
+              <div class="product-pay-buttons">
                 <div class="product-bag-buttons-container">
                   <button class="product-plus-minus-container">
                     <svg
@@ -307,7 +312,202 @@
                   </svg>
                 </button>
 
-                <button type="button"></button>
+                <button class="header-btn-like" type="button">
+                  <svg
+                    class="btn-like-icon"
+                    width="22"
+                    height="19"
+                    viewBox="0 0 22 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.3701 18.7964C10.4329 18.8608 10.5081 18.912 10.591 18.947C10.674 18.982 10.7631 19 10.8532 19C10.9432 19 11.0324 18.982 11.1153 18.947C11.1983 18.912 11.2734 18.8608 11.3363 18.7964L20.0161 10.0016C22.2698 7.71904 22.2698 4.00337 20.0161 1.71987C18.9214 0.610693 17.4658 1.03492e-05 15.916 1.03492e-05C14.3662 1.03492e-05 12.9114 0.610693 11.8167 1.71897L10.8532 2.69606L9.88967 1.71987C9.35573 1.17416 8.71795 0.74084 8.01393 0.445464C7.30991 0.150088 6.55388 -0.00137213 5.7904 1.03492e-05C5.02678 -0.00144201 4.2706 0.149983 3.56642 0.445359C2.86224 0.740736 2.22431 1.17409 1.69023 1.71987C-0.563411 4.00337 -0.563411 7.71904 1.69023 10.0007L10.3701 18.7964ZM2.65556 2.67254C3.0639 2.25547 3.5515 1.92424 4.08969 1.69834C4.62789 1.47244 5.20581 1.35641 5.7895 1.35708C6.97286 1.35708 8.08566 1.82482 8.92253 2.67344L10.3692 4.13908C10.4992 4.26314 10.6721 4.33235 10.8518 4.33235C11.0316 4.33235 11.2044 4.26314 11.3345 4.13908L12.7811 2.67254C13.1898 2.25565 13.6776 1.92455 14.2159 1.69866C14.7542 1.47277 15.3322 1.35664 15.916 1.35708C16.4997 1.35641 17.0776 1.47244 17.6158 1.69834C18.154 1.92424 18.6416 2.25547 19.0499 2.67254C20.7842 4.4304 20.7842 7.2902 19.0499 9.04897L10.8532 17.3552L2.65556 9.04807C0.921226 7.29111 0.921226 4.4304 2.65556 2.67254Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-code-container">
+              <p class="product-code-text">Код товару:</p>
+              <p class="product-code-value">1003РТ</p>
+            </div>
+
+            <p class="product-info-desc">
+              Делікатний очищувальний засіб, який ефективно видаляє забруднення,
+              зволожує і підтримує нормальний pH шкіри. Мус знімає подразнення
+              та запалення, заспокоює та відновлює шкіру. Засіб підходить для
+              сухої та чутливої шкіри обличчя.
+            </p>
+
+            <div class="product-line"></div>
+
+            <div class="faq-container product-acardeon">
+              <div class="backdrop-container">
+                <div class="backdrop-heading-container">
+                  <p class="heading-text">Основні характеристики</p>
+                  <svg
+                    class="backdrop-arrow-icon"
+                    viewBox="0 0 15 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.6667 7.83333L7.83333 2L2 7.83333"
+                      stroke="#212121"
+                      stroke-width="1.6"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </div>
+                <p class="backdrop-text">
+                  На сторінці «Каталог» ви можете обрати продукти для тіла,
+                  обличчя або дому за фільтром, натиснути на позицію, яка вас
+                  закохала в себе, додати її в кошик або одразу натиснути на
+                  кнопку «Купити». Потім вам потрібно бути заповнити контактні
+                  дані, обрати спосіб доставки та оплати — і Steya вже в дорозі
+                  до вас.
+                </p>
+                <div class="backdrop-line"></div>
+              </div>
+
+              <div class="backdrop-container">
+                <div class="backdrop-heading-container">
+                  <p class="heading-text">Склад</p>
+                  <svg
+                    class="backdrop-arrow-icon"
+                    viewBox="0 0 15 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.6667 7.83333L7.83333 2L2 7.83333"
+                      stroke="#212121"
+                      stroke-width="1.6"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </div>
+                <p class="backdrop-text">
+                  Ми здійснюємо доставку товару всі країни, де наявні відділення
+                  Нової Пошти. Оплата за доставку закордон здійснюється наперед,
+                  разом з оплатою самого замовлення, так як за правилами Нової
+                  Пошти доставку закордон сплачує Відправник. 
+                </p>
+                <div class="backdrop-line"></div>
+              </div>
+
+              <div class="backdrop-container">
+                <div class="backdrop-heading-container">
+                  <p class="heading-text">Протипоказання</p>
+                  <svg
+                    class="backdrop-arrow-icon"
+                    viewBox="0 0 15 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.6667 7.83333L7.83333 2L2 7.83333"
+                      stroke="#212121"
+                      stroke-width="1.6"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </div>
+                <p class="backdrop-text">
+                  Ми здійснюємо доставку по Києву на таксі, протягом двох годин
+                  після оформлення замовлення у робочий час (з 10:00 до 17:30).
+                  Вартість доставки сплачує Замовник, згідно тарифам служби
+                  таксі. Замовлення, оформлене після 17:30, зможе бути
+                  відправлене вранці наступного дня. Доставка здійснюється лише
+                  після повної оплати замовлення.
+                </p>
+                <div class="backdrop-line"></div>
+              </div>
+
+              <div class="backdrop-container">
+                <div class="backdrop-heading-container">
+                  <p class="heading-text">
+                    Умови зберігання & Термін придатності
+                  </p>
+                  <svg
+                    class="backdrop-arrow-icon"
+                    viewBox="0 0 15 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.6667 7.83333L7.83333 2L2 7.83333"
+                      stroke="#212121"
+                      stroke-width="1.6"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </div>
+                <p class="backdrop-text">
+                  Ми здійснюємо доставку по Києву на таксі, протягом двох годин
+                  після оформлення замовлення у робочий час (з 10:00 до 17:30).
+                  Вартість доставки сплачує Замовник, згідно тарифам служби
+                  таксі. Замовлення, оформлене після 17:30, зможе бути
+                  відправлене вранці наступного дня. Доставка здійснюється лише
+                  після повної оплати замовлення.
+                </p>
+                <div class="backdrop-line"></div>
+              </div>
+            </div>
+
+            <div class="product-line"></div>
+
+            <div class="product-additional-info-container">
+              <div class="product-additional-info-item">
+                <div class="additional-info-title-container">
+                  <svg
+                    class="product-star-icon"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.4995 3.25C14.0853 7.53544 17.4641 10.9142 21.7495 12.5C17.4641 14.0858 14.0853 17.4646 12.4995 21.75C10.9138 17.4646 7.53495 14.0858 3.24951 12.5C7.53495 10.9142 10.9138 7.53544 12.4995 3.25Z"
+                      stroke="#0C4D47"
+                      stroke-width="1.6"
+                    />
+                  </svg>
+
+                  <p class="additional-info-title">Доставка: Новой Почтой.</p>
+                </div>
+                <p class="additional-info-text">
+                  Обработка и комплектование заказов происходит в течении 1-3
+                  дней
+                </p>
+              </div>
+
+              <div class="product-additional-info-item">
+                <div class="additional-info-title-container">
+                  <svg
+                    class="product-star-icon"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.4995 3.25C14.0853 7.53544 17.4641 10.9142 21.7495 12.5C17.4641 14.0858 14.0853 17.4646 12.4995 21.75C10.9138 17.4646 7.53495 14.0858 3.24951 12.5C7.53495 10.9142 10.9138 7.53544 12.4995 3.25Z"
+                      stroke="#0C4D47"
+                      stroke-width="1.6"
+                    />
+                  </svg>
+
+                  <p class="additional-info-title">Консультація в Telegram</p>
+                </div>
+                <p class="additional-info-text">
+                  Потрібна допомога? Зв'яжіться з нами через Telegram для
+                  вирішення будь-яких питань
+                </p>
               </div>
             </div>
           </div>
@@ -481,5 +681,7 @@
         </div>
       </div>
     </footer> -->
+
+    <script src="../scripts.js/backdrop.js"></script>
   </body>
 </html>
