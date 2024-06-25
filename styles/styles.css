@@ -110,6 +110,13 @@ body {
 
 header {
   padding-top: 1vw;
+  position: sticky;
+  top: 0;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+  background-color: #ffffff;
 }
 
 .header-line {
@@ -1822,11 +1829,20 @@ footer {
   background: transparent;
   border: none;
   padding: 1vw;
+  transition: 0.3s;
+}
+
+.product-plus-minus-container:hover {
+  background-color: #e1ff42;
 }
 
 .product-bag-plus-minus-icons {
   width: 0.7vw;
   height: 0.7vw;
+  transition: 0.3s;
+}
+.product-plus-minus-container:hover .product-bag-plus-minus-icons {
+  transform: scale(1.2);
 }
 
 .product-pay-buttons {
